@@ -153,7 +153,7 @@ def sanity_check(c):
 def whut_am_i(val):
     regex_bundle = {
             'ip_address': re.compile(r'^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$'),
-            'hostname': re.compile(r'^[a-zA-Z0-9\-\.]+(\.[a-zA-Z]{2,3})?$'),
+            'hostname': re.compile(r'^[a-zA-Z0-9\-]+(\.[a-zA-Z]{2,3})?$'),
             }
     if val == '':
         return('empty')
